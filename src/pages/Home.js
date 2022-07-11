@@ -5,21 +5,21 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import TextTyper from "../components/TextTyper";
 import "./Home.css";
-import {run as runHolder} from 'holderjs/holder';
+import { run as runHolder } from "holderjs/holder";
 
 export default function Home() {
   const { t } = useTranslation();
   const myAge = new Date().getFullYear() - 2001;
 
-  document.title = `${t("Home")} | ${t('Deri Kurniawan')}`;
+  document.title = `${t("Home")} | ${t("Deri Kurniawan")}`;
 
   useEffect(() => {
-    runHolder('image-class-name-no-initial-dot');
-  })
+    runHolder("image-class-name-no-initial-dot");
+  });
 
   return (
     <div className="Home">
-      <section id='section1'>
+      <section id="section1">
         <div className="py-5 my-2">
           <Row className="flex-lg-row-reverse g-5 py-5">
             <Col xs={12} md={12} lg={6}>
@@ -35,14 +35,18 @@ export default function Home() {
                   {t("I'm")}{" "}
                   <TextTyper
                     text={[
-                      t('Deri Kurniawan'),
+                      t("Deri Kurniawan"),
                       `${myAge} ${t("years old")}`,
                       t("Student"),
                       t("Junior Developer"),
                     ]}
                   />
                 </h1>
-                <p className="lead">{t("A student who is studying at the Muhammadiyah University of Sukabumi who is struggling to achieve his dream ~")}</p>
+                <p className="lead">
+                  {t(
+                    "A student who is studying at the Muhammadiyah University of Sukabumi who is struggling to achieve his dream ~"
+                  )}
+                </p>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-start align-items-center">
                   <a
                     href="#section2"
@@ -50,7 +54,10 @@ export default function Home() {
                   >
                     {t("Discover")}
                   </a>
-                  <Link to="/about" className="btn btn-outline-light btn-lg px-4">
+                  <Link
+                    to="/about"
+                    className="btn btn-outline-light btn-lg px-4"
+                  >
                     {t("About Me")}
                   </Link>
                 </div>
@@ -76,15 +83,19 @@ export default function Home() {
           </Row>
         </div>
       </section>
-      <section id='section3'>
+      <section id="section3">
         <div className="px-4 py-5 my-2">
           <h1 className="fw-bold text-white text-lg-center">My Projects</h1>
           <Row className="flex-lg-row-reverse g-5 py-5">
             <Col>
-              <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
             </Col>
             <Col lg={4}>
-              <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
             </Col>
           </Row>
         </div>

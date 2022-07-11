@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 export default function About() {
   const { t } = useTranslation();
-  document.title = `${t("About")} | ${t('Deri Kurniawan')}`;
+  document.title = `${t("About")} | ${t("Deri Kurniawan")}`;
 
   return (
     <div className="About">

@@ -1,11 +1,11 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .PageNotFound {
   position: relative;
-  height: 80vh
+  height: 80vh;
 }
 
 .PageNotFound__container {
@@ -14,18 +14,18 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .PageNotFound__container {
   max-width: 520px;
   width: 100%;
   text-align: center;
-  line-height: 1.4
+  line-height: 1.4;
 }
 
 .PageNotFound__container-4cry4 {
-  height: 190px
+  height: 190px;
 }
 
 .PageNotFound__container-4cry4 h1 {
@@ -34,11 +34,11 @@
   margin: 0;
 }
 
-.PageNotFound__container-4cry4 h1>span {
+.PageNotFound__container-4cry4 h1 > span {
   display: inline-block;
   width: 120px;
   height: 120px;
-  background-image: url('https://colorlib.com/etc/404/colorlib-error-404-12/img/emoji.png');
+  background-image: url("https://colorlib.com/etc/404/colorlib-error-404-12/img/emoji.png");
   background-size: cover;
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);
@@ -56,7 +56,7 @@
     -ms-transform: translateY(0%);
     -o-transform: translateY(0%);
   }
-  
+
   50% {
     transform: translateY(-5%);
     -webkit-transform: translateY(-5%);
@@ -64,14 +64,14 @@
     -ms-transform: translateY(-5%);
     -o-transform: translateY(-5%);
   }
-  
+
   100% {
     transform: translateY(0%);
     -webkit-transform: translateY(0%);
     -moz-transform: translateY(0%);
     -ms-transform: translateY(0%);
     -o-transform: translateY(0%);
-  }  
+  }
 }
 
 .PageNotFound__container h2 {
@@ -94,22 +94,21 @@
   color: #fff;
   border-radius: 40px;
   text-decoration: none;
-  -webkit-transition: .2s all;
-  transition: .2s all
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   .PageNotFound__container-4cry4 {
-    height: 115px
+    height: 115px;
   }
-  
+
   .PageNotFound__container-4cry4 h1 {
-    font-size: 86px
+    font-size: 86px;
   }
-  
-  .PageNotFound__container-4cry4 h1>span {
+
+  .PageNotFound__container-4cry4 h1 > span {
     width: 86px;
-    height: 86px
+    height: 86px;
   }
-  
 }

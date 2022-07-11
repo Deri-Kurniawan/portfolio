@@ -5,7 +5,7 @@ import "./PageNotFound.css";
 
 export default function PageNotFound() {
   const { t } = useTranslation();
-  document.title = `${t("Page Not Found")} | ${t('Deri Kurniawan')}`;
+  document.title = `${t("Page Not Found")} | ${t("Deri Kurniawan")}`;
 
   return (
     <div className="PageNotFound">
@@ -17,7 +17,11 @@ export default function PageNotFound() {
         </div>
 
         <h2>{t("Oops! Page Not Be Found")}</h2>
-        <p>{t("Sorry but the page you are looking for does not exist, have been removed. name changed or is temporarily unavailable.")}</p>
+        <p>
+          {t(
+            "Sorry but the page you are looking for does not exist, have been removed. name changed or is temporarily unavailable."
+          )}
+        </p>
         <Link to="/" className="btn btn-outline-primary">
           {t("Go Home")}
         </Link>

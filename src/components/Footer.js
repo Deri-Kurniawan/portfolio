@@ -7,7 +7,7 @@ function Footer() {
     <footer>
       <div>
         <p className="text-center">
-          &copy;{t('Copyright', { year: new Date().getFullYear() })}
+          &copy;{t("Copyright", { year: new Date().getFullYear() })}
         </p>
       </div>
     </footer>

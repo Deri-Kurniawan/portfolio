@@ -20,26 +20,24 @@ function LanguageSwitch() {
   }, [languageCode]);
 
   const DropdownTitle = () => {
-    return (
-      <span className={`fi fi-${flagCode}`}></span>
-    );
+    return <span className={`fi fi-${flagCode}`}></span>;
   };
 
   return (
     <>
       <DropdownButton title={<DropdownTitle />} id="collasible-nav-dropdown">
         {languages
-        .sort((current, next) => current.name.localeCompare(next.name))
-        .map(({ code, name, flag }, i) => (
-          <Dropdown.Item
-            key={i}
-            value={code}
-            onClick={() => onClickLang(flag, code)}
-            disabled={code === languageCode}
-          >
-            <span className={`fi fi-${flag}`}></span> {name}
-          </Dropdown.Item>
-        ))}
+          .sort((current, next) => current.name.localeCompare(next.name))
+          .map(({ code, name, flag }, i) => (
+            <Dropdown.Item
+              key={i}
+              value={code}
+              onClick={() => onClickLang(flag, code)}
+              disabled={code === languageCode}
+            >
+              <span className={`fi fi-${flag}`}></span> {name}
+            </Dropdown.Item>
+          ))}
       </DropdownButton>
     </>
   );
