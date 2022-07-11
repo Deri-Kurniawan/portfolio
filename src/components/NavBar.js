@@ -37,7 +37,7 @@ export default function NavBar() {
                 {t("About")}
               </NavLink>
               <NavLink to="/404" activeclassname="active" className="nav-link">
-                {t("PageNotFound")}
+                {t("Page Not Found")}
               </NavLink>
             </Nav>
             <div className="d-flex">

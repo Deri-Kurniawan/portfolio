@@ -42,7 +42,7 @@ export default function Home() {
                     ]}
                   />
                 </h1>
-                <p className="lead">{t("Home-Intro")}</p>
+                <p className="lead">{t("A student who is studying at the Muhammadiyah University of Sukabumi who is struggling to achieve his dream ~")}</p>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-start align-items-center">
                   <a
                     href="#section2"

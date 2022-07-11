@@ -22,18 +22,18 @@ function LanguageSwitch() {
       languages.find((lang) => lang.code === languageCode).dir || "ltr";
   }, [languageCode]);
 
-  const DropDownTitle = () => {
+  const DropdownTitle = () => {
     return (
       <>
-        <span className={`fi fi-${flagCode}`}></span> {t("Languages")}
+        <span className={`fi fi-${flagCode}`}></span>
       </>
     );
   };
 
   return (
     <>
-      <DropdownButton drop={"down"} title={<DropDownTitle />} id="collasible-nav-dropdown">
-        {languages.map(({ code, name, flag }, i) => (
+      <DropdownButton drop={"down"} title={<DropdownTitle />} id="collasible-nav-dropdown">
+        {languages.sort((current, next) => current.name.localeCompare(next.name)).map(({ code, name, flag }, i) => (
           <Dropdown.Item
             key={i}
             value={code}
