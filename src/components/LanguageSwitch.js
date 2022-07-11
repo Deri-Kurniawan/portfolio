@@ -4,13 +4,10 @@ import languages from "../locales/languages";
 import cookies from "js-cookie";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 import "flag-icons/css/flag-icons.min.css";
-import { useTranslation } from "react-i18next";
 
 function LanguageSwitch() {
   const languageCode = cookies.get("i18next") || "en";
   const flagCode = cookies.get("flag-code") || "gb";
-
-  const { t } = useTranslation();
 
   const onClickLang = (flag, code) => {
     i18next.changeLanguage(code);
@@ -24,16 +21,16 @@ function LanguageSwitch() {
 
   const DropdownTitle = () => {
     return (
-      <>
-        <span className={`fi fi-${flagCode}`}></span>
-      </>
+      <span className={`fi fi-${flagCode}`}></span>
     );
   };
 
   return (
     <>
       <DropdownButton drop={"down"} title={<DropdownTitle />} id="collasible-nav-dropdown">
-        {languages.sort((current, next) => current.name.localeCompare(next.name)).map(({ code, name, flag }, i) => (
+        {languages
+        .sort((current, next) => current.name.localeCompare(next.name))
+        .map(({ code, name, flag }, i) => (
           <Dropdown.Item
             key={i}
             value={code}
