@@ -27,7 +27,7 @@ function LanguageSwitch() {
 
   return (
     <>
-      <DropdownButton drop={"down"} title={<DropdownTitle />} id="collasible-nav-dropdown">
+      <DropdownButton title={<DropdownTitle />} id="collasible-nav-dropdown">
         {languages
         .sort((current, next) => current.name.localeCompare(next.name))
         .map(({ code, name, flag }, i) => (
