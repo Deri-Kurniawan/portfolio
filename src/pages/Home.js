@@ -1,16 +1,21 @@
-import React from "react";
-import { Row, Col } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Row, Col, Card } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import TextTyper from "../components/TextTyper";
 import "./Home.css";
+import {run as runHolder} from 'holderjs/holder';
 
 export default function Home() {
   const { t } = useTranslation();
   const myAge = new Date().getFullYear() - 2001;
 
   document.title = `${t("Home")} | ${t('Deri Kurniawan')}`;
+
+  useEffect(() => {
+    runHolder('image-class-name-no-initial-dot');
+  })
 
   return (
     <div className="Home">
@@ -19,7 +24,7 @@ export default function Home() {
           <Row className="flex-lg-row-reverse g-5 py-5">
             <Col xs={12} md={12} lg={6}>
               <img
-                src="https://getbootstrap.com/docs/5.2/examples/heroes/bootstrap-themes.png"
+                src="holder.js/100px310"
                 className="d-block mx-lg-auto img-fluid"
                 alt="Bootstrap Themes"
               />
