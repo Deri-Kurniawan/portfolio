@@ -32,14 +32,13 @@ function LanguageSwitch() {
 
   return (
     <>
-      <DropdownButton title={<DropDownTitle />} id="collasible-nav-dropdown">
+      <DropdownButton drop={"down"} title={<DropDownTitle />} id="collasible-nav-dropdown">
         {languages.map(({ code, name, flag }, i) => (
           <Dropdown.Item
             key={i}
             value={code}
             onClick={() => onClickLang(flag, code)}
-            // disabled={code === languageCode}
-            className={'is-active'}
+            disabled={code === languageCode}
           >
             <span className={`fi fi-${flag}`}></span> {name}
           </Dropdown.Item>
