@@ -5,7 +5,7 @@ import cookies from "js-cookie";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 import "flag-icons/css/flag-icons.min.css";
 
-function LanguageSwitch() {
+export default function LanguageSwitch() {
   const languageCode = cookies.get("i18next") || "en";
   const flagCode = cookies.get("flag-code") || "us";
 
@@ -42,5 +42,3 @@ function LanguageSwitch() {
     </>
   );
 }
-
-export default LanguageSwitch;

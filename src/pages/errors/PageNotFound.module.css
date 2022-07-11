@@ -1,40 +1,32 @@
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .PageNotFound {
   position: relative;
   height: 80vh;
 }
 
-.PageNotFound__container {
+.container {
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.PageNotFound__container {
   max-width: 520px;
   width: 100%;
   text-align: center;
   line-height: 1.4;
 }
 
-.PageNotFound__container-4cry4 {
+.container_fof {
   height: 190px;
 }
 
-.PageNotFound__container-4cry4 h1 {
+.container_fof_h1 {
   font-size: 146px;
   font-weight: 700;
   margin: 0;
 }
 
-.PageNotFound__container-4cry4 h1 > span {
+.container_fof_h1_span {
   display: inline-block;
   width: 120px;
   height: 120px;
@@ -74,40 +66,28 @@
   }
 }
 
-.PageNotFound__container h2 {
+.container_h2 {
   font-size: 22px;
   font-weight: 700;
   margin: 0;
 }
 
-.PageNotFound__container p {
+.container_p {
   color: #bdbbbb;
   font-weight: 300;
   margin-top: 1.3vh;
 }
 
-.PageNotFound__container a {
-  display: inline-block;
-  padding: 12px 30px;
-  font-weight: 700;
-  background-color: #4e73df;
-  color: #fff;
-  border-radius: 40px;
-  text-decoration: none;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
 @media only screen and (max-width: 767px) {
-  .PageNotFound__container-4cry4 {
+  .container_fof {
     height: 115px;
   }
 
-  .PageNotFound__container-4cry4 h1 {
+  .container_fof_h1 {
     font-size: 86px;
   }
 
-  .PageNotFound__container-4cry4 h1 > span {
+  .container_fof_h1_span {
     width: 86px;
     height: 86px;
   }

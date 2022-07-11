@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./components/App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
-import "bootstrap-dark-5/dist/css/bootstrap-night.min.css";
 import Translator from "./locales/Translator";
+import "bootstrap-dark-5/dist/css/bootstrap-night.min.css";
+import "./index.css";
 
 // Initialize i18next translator
 Translator.init();

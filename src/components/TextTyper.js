@@ -1,6 +1,6 @@
 import React from "react";
 import ReactTypingEffect from "react-typing-effect";
-import "./TextTyper.css";
+import styles from "./TextTyper.module.css";
 
 export default function TextTyper({
   speed = 50,
@@ -17,7 +17,7 @@ export default function TextTyper({
       eraseDelay={eraseDelay}
       text={text}
       cursorRenderer={(cursor) => (
-        <span className="TextTyper__cursor">{cursor}</span>
+        <span className={styles.cursor}>{cursor}</span>
       )}
       displayTextRenderer={(text) => {
         return (

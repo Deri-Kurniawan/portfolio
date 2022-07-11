@@ -4,13 +4,13 @@ import Navbar from "react-bootstrap/Navbar";
 import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
 import LanguageSwitch from "./LanguageSwitch";
-import "./NavBar.css";
+import styles from "./NavBar.module.css";
 
 export default function NavBar() {
   const { t } = useTranslation();
 
   return (
-    <div className="NavBar position-sticky top-0">
+    <div className={`${styles.NavBar} position-sticky top-0`}>
       <Navbar expand="md">
         <Container>
           <Link className="navbar-brand" to="/">
