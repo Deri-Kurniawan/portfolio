@@ -7,7 +7,7 @@ import "flag-icons/css/flag-icons.min.css";
 
 function LanguageSwitch() {
   const languageCode = cookies.get("i18next") || "en";
-  const flagCode = cookies.get("flag-code") || "gb";
+  const flagCode = cookies.get("flag-code") || "us";
 
   const onClickLang = (flag, code) => {
     i18next.changeLanguage(code);
