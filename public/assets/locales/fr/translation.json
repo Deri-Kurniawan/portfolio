@@ -1,0 +1,19 @@
+{
+  "Home": "Maison",
+  "Home-Intro": "Un étudiant qui étudie à l'Université Muhammadiyah de Sukabumi qui peine à réaliser son rêve ~",
+  "Timeline": "Chronologie",
+  "About": "À propos de",
+  "Languages": "Langages",
+  "PageNotFound": "Page Non Trouvée",
+  "PageNotFound-Oops": "Oops! Page introuvable",
+  "PageNotFound-Sorry": "Désolé mais la page que vous recherchez n'existe pas, elle a été supprimée. nom a changé ou est temporairement indisponible.",
+  "PageNotfound-GoHome": "Rentrer chez soi",
+  "I'm": "Je suis",
+  "Student": "Étudiant",
+  "years old": "ans",
+  "Junior Developer": "Développeur débutant",
+  "Discover": "Découvrir",
+  "About Me": "À propos de moi",
+  "Copyright": "{{ year }} Deri Kurniawan Tous droits réservés.",
+  "Deri Kurniawan": "Deri Kurniawan"
+}

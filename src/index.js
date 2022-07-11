@@ -1,11 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./components/App";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import reportWebVitals from "./reportWebVitals";
+import "bootstrap-dark-5/dist/css/bootstrap-night.min.css";
+import Translator from "./locales/Translator";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Initialize i18next translator
+Translator.init();
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <App />

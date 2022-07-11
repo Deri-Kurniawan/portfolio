@@ -1,0 +1,115 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.PageNotFound {
+  position: relative;
+  height: 80vh
+}
+
+.PageNotFound__container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
+}
+
+.PageNotFound__container {
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.4
+}
+
+.PageNotFound__container-4cry4 {
+  height: 190px
+}
+
+.PageNotFound__container-4cry4 h1 {
+  font-size: 146px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.PageNotFound__container-4cry4 h1>span {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-image: url('https://colorlib.com/etc/404/colorlib-error-404-12/img/emoji.png');
+  background-size: cover;
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+  z-index: -1;
+  animation: cryface 1s infinite;
+  -webkit-animation: cryface 1s infinite;
+}
+
+@keyframes cryface {
+  0% {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+  
+  50% {
+    transform: translateY(-5%);
+    -webkit-transform: translateY(-5%);
+    -moz-transform: translateY(-5%);
+    -ms-transform: translateY(-5%);
+    -o-transform: translateY(-5%);
+  }
+  
+  100% {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }  
+}
+
+.PageNotFound__container h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.PageNotFound__container p {
+  color: #bdbbbb;
+  font-weight: 300;
+  margin-top: 1.3vh;
+}
+
+.PageNotFound__container a {
+  display: inline-block;
+  padding: 12px 30px;
+  font-weight: 700;
+  background-color: #4e73df;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  -webkit-transition: .2s all;
+  transition: .2s all
+}
+
+@media only screen and (max-width:767px) {
+  .PageNotFound__container-4cry4 {
+    height: 115px
+  }
+  
+  .PageNotFound__container-4cry4 h1 {
+    font-size: 86px
+  }
+  
+  .PageNotFound__container-4cry4 h1>span {
+    width: 86px;
+    height: 86px
+  }
+  
+}
