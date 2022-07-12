@@ -11,7 +11,7 @@ export default function PageNotFound() {
     <>
       <Title set='Page Not Found'/>
 
-      <div className={`${styles.PageNotFound} d-flex justify-content-center align-items-center text-center`}>
+      <div className={`${styles.root} d-flex justify-content-center align-items-center text-center`}>
         <div className={styles.container}>
           <h1 className={styles.container_fof_h1}>
             4<span className={styles.container_fof_h1_span}></span>4

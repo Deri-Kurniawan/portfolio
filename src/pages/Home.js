@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
 import TextTyper from "../components/TextTyper";
 import { run as runHolder } from "holderjs/holder";
 import Title from "../components/Title";
@@ -91,7 +90,6 @@ export default function Home() {
             </Col>
           </Row>
         </Section>
-        <Footer />
       </div>
     </>
   );

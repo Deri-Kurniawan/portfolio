@@ -29,7 +29,7 @@ export default function NavBar() {
   const { t } = useTranslation();
 
   return (
-    <Navbar expand="md" className={`${styles.NavBar} position-sticky top-0`}>
+    <Navbar expand="md" className={`${styles.root} position-sticky top-0`}>
       <Container>
         <Link className="navbar-brand" to="/">
           DK

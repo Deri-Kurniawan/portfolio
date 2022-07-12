@@ -1,4 +1,4 @@
-.App { 
+.root { 
   background-image: url("https://wallpaperaccess.com/full/6233787.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -6,7 +6,7 @@
   min-height: 100vh;
 }
 
-.App_container {
+.container {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);

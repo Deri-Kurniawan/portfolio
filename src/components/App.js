@@ -4,17 +4,19 @@ import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./AppRouter";
 import { Container } from "react-bootstrap";
 import styles from './App.module.css';
+import Footer from "./Footer";
 
 export default function App() {
   return (
     <BrowserRouter>
-      <div className={styles.App}>
+      <div className={styles.root}>
         <NavBar />
-        <div className={styles.App_container}>
+        <div className={styles.container}>
           <Container>
             <AppRouter />
           </Container>
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
