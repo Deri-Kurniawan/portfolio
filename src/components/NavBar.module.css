@@ -2,7 +2,7 @@
   z-index: 9999;
   background: rgba(255, 255, 255, 0);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.1px);
+  backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(4.1px);
   border: 0.1px solid rgba(255, 255, 255, 0.14);
   border-radius: 5px;
