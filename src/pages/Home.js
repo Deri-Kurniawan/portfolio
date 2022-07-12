@@ -20,10 +20,10 @@ export default function Home() {
     <div className="Home">
       <section id="section1">
         <div className="py-5 my-2">
-          <Row className="flex-lg-row-reverse g-5 py-5">
+          <Row className="flex-lg-row-reverse g-0 py-5">
             <Col xs={12} md={12} lg={6}>
               <img
-                src="holder.js/100px310"
+                src="holder.js/800x310"
                 className="d-block mx-lg-auto img-fluid"
                 alt="Bootstrap Themes"
               />
