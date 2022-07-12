@@ -5,10 +5,8 @@ export default function Footer() {
   const { t } = useTranslation();
   return (
     <footer>
-      <div>
-        <p className="text-center">
-          &copy;{t("Copyright", { year: new Date().getFullYear() })}
-        </p>
+      <div className="d-flex justify-content-center justify-center py-3">
+        &copy;{t("Copyright", { year: new Date().getFullYear() })}
       </div>
     </footer>
   );
