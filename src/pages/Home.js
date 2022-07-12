@@ -9,6 +9,7 @@ import Title from "../components/Title";
 import LazyLoad from "react-lazyload";
 import heroImage from '../hero.png';
 import styles from "./Home.module.css";
+import Section from "../components/Section";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -21,11 +22,10 @@ export default function Home() {
   return (
     <>
       <Title set="Home"/>
-      
+
       <div className="Home">
-        <section id="section1">
-          <div className="py-5 my-2">
-            <Row className="flex-lg-row-reverse g-0 py-5">
+        <Section id='Introduction'>
+        <Row className="flex-lg-row-reverse g-0 py-5">
               <Col xs={12} md={12} lg={6}>
                 <div className="shadow">
                   <LazyLoad>
@@ -57,7 +57,7 @@ export default function Home() {
                   </p>
                   <div className="d-grid gap-2 d-md-flex justify-content-md-start align-items-center">
                     <a
-                      href="#section2"
+                      href="#MyExperience"
                       className="btn btn-primary btn-lg px-4 me-md-2"
                     >
                       {t("Discover")}
@@ -72,42 +72,25 @@ export default function Home() {
                 </div>
               </Col>
             </Row>
-          </div>
-        </section>
-        <section id="section2">
-          <div className="px-4 py-5 my-2">
-            <h1 className="fw-bold text-white text-lg-center">My Experience</h1>
-            <Row className="flex-lg-row-reverse g-5 py-5">
-              <Col>
-                <p className="lead">
-                  Bahasa Pemrograman, Tools, Library yang pernah saya gunakan
-                </p>
-              </Col>
-              <Col>
-                <p className="lead">
-                  Bahasa Pemrograman, Tools, Library yang pernah saya gunakan
-                </p>
-              </Col>
-            </Row>
-          </div>
-        </section>
-        <section id="section3">
-          <div className="px-4 py-5 my-2">
-            <h1 className="fw-bold text-white text-lg-center">My Projects</h1>
-            <Row className="flex-lg-row-reverse g-5 py-5">
-              <Col>
-                <p className="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </Col>
-              <Col lg={4}>
-                <p className="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </Col>
-            </Row>
-          </div>
-        </section>
+        </Section>
+        <Section id='MyExperience'>
+          <h1 className="fw-bold text-white text-lg-center py-3">My Experience</h1>
+          <Row>
+            <Col xs={12} md={12} lg={6}>
+              <img className="img-fluid" src="holder.js/550x500" alt=""/>
+            </Col>
+            <Col>Lorem Ipsum</Col>
+          </Row>
+        </Section>
+        <Section id='MyProjects'>
+          <h1 className="fw-bold text-white text-lg-center py-3">My Projects</h1>
+          <Row>
+            <Col xs={12} md={12} lg={6}>Ipsum Lorem</Col>
+            <Col>
+              <img className="img-fluid" src="holder.js/550x500" alt=""/>
+            </Col>
+          </Row>
+        </Section>
         <Footer />
       </div>
     </>
