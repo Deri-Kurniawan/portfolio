@@ -29,32 +29,30 @@ export default function NavBar() {
   const { t } = useTranslation();
 
   return (
-    <div className={`${styles.NavBar} position-sticky top-0`}>
-      <Navbar expand="md">
-        <Container>
-          <Link className="navbar-brand" to="/">
-            DK
-          </Link>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              {navLinks.map(({ to, label }, i) => (
-                <NavLink
-                  key={i}
-                  to={to}
-                  activeclassname="active"
-                  className="nav-link"
-                >
-                  {t(label)}
-                </NavLink>
-              ))}
-            </Nav>
-            <div className="d-flex">
-              <LanguageSwitch />
-            </div>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    <Navbar expand="md" className={`${styles.NavBar} position-sticky top-0`}>
+      <Container>
+        <Link className="navbar-brand" to="/">
+          DK
+        </Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            {navLinks.map(({ to, label }, i) => (
+              <NavLink
+                key={i}
+                to={to}
+                activeclassname="active"
+                className="nav-link"
+              >
+                {t(label)}
+              </NavLink>
+            ))}
+          </Nav>
+          <div className="d-flex">
+            <LanguageSwitch />
+          </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
