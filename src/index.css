@@ -9,10 +9,6 @@ code {
     monospace;
 }
 
-body {
-  overflow-x: none;
-}
-
 /* Glassmorphism */
 #collasible-nav-dropdown,
 div[aria-labelledby="collasible-nav-dropdown"] {
