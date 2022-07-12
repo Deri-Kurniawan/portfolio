@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import TextTyper from "../components/TextTyper";
 import { run as runHolder } from "holderjs/holder";
 import Title from "../components/Title";
+import LazyLoad from "react-lazyload";
+import heroImage from '../hero.png';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -24,11 +26,15 @@ export default function Home() {
           <div className="py-5 my-2">
             <Row className="flex-lg-row-reverse g-0 py-5">
               <Col xs={12} md={12} lg={6}>
-                <img
-                  src="holder.js/800x310"
-                  className="d-block mx-lg-auto img-fluid"
-                  alt="Bootstrap Themes"
-                />
+                <div className="shadow">
+                  <LazyLoad>
+                    <img
+                      src={heroImage}
+                      className="d-block mx-lg-auto img-fluid col-12"
+                      alt=""
+                    />
+                  </LazyLoad>
+                </div>
               </Col>
               <Col lg={6}>
                 <div className="py-5">
