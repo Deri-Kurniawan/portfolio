@@ -1,23 +1,12 @@
 .PageNotFound {
-  position: relative;
-  height: 80vh;
+  min-height: 100vh;
 }
 
 .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   max-width: 520px;
   width: 100%;
   text-align: center;
   line-height: 1.4;
-}
-
-.container_fof {
-  height: 190px;
 }
 
 .container_fof_h1 {
@@ -32,9 +21,9 @@
   height: 120px;
   background-image: url("https://colorlib.com/etc/404/colorlib-error-404-12/img/emoji.png");
   background-size: cover;
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   z-index: -1;
   animation: cryface 1s infinite;
   -webkit-animation: cryface 1s infinite;
