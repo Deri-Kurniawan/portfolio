@@ -6,6 +6,25 @@ import { Link, NavLink } from "react-router-dom";
 import LanguageSwitch from "./LanguageSwitch";
 import styles from "./NavBar.module.css";
 
+const navLinks = [
+  {
+    to: "/",
+    label: "Home"
+  },
+  {
+    to: "/timeline",
+    label: "Timeline"
+  },
+  {
+    to: "/about",
+    label: "About"
+  },
+  {
+    to: "/404",
+    label: "Page Not Found"
+  },
+]
+
 export default function NavBar() {
   const { t } = useTranslation();
 
@@ -19,26 +38,16 @@ export default function NavBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavLink to="/home" activeclassname="active" className="nav-link">
-                {t("Home")}
-              </NavLink>
-              <NavLink
-                to="/timeline"
-                activeclassname="active"
-                className="nav-link"
-              >
-                {t("Timeline")}
-              </NavLink>
-              <NavLink
-                to="/about"
-                activeclassname="active"
-                className="nav-link"
-              >
-                {t("About")}
-              </NavLink>
-              <NavLink to="/404" activeclassname="active" className="nav-link">
-                {t("Page Not Found")}
-              </NavLink>
+              {navLinks.map(({ to, label }, i) => (
+                <NavLink
+                  key={i}
+                  to={to}
+                  activeclassname="active"
+                  className="nav-link"
+                >
+                  {t(label)}
+                </NavLink>
+              ))}
             </Nav>
             <div className="d-flex">
               <LanguageSwitch />
