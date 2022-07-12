@@ -1,0 +1,19 @@
+.person_img {
+  animation: person 5s linear infinite;
+  -webkit-animation: person 5s linear infinite;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+@keyframes person {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

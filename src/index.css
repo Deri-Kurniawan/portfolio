@@ -12,7 +12,6 @@ code {
 /* Glassmorphism */
 #collasible-nav-dropdown,
 div[aria-labelledby="collasible-nav-dropdown"] {
-  z-index: 9999;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);

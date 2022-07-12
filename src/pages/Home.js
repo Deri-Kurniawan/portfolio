@@ -8,6 +8,7 @@ import { run as runHolder } from "holderjs/holder";
 import Title from "../components/Title";
 import LazyLoad from "react-lazyload";
 import heroImage from '../hero.png';
+import styles from "./Home.module.css";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -30,7 +31,7 @@ export default function Home() {
                   <LazyLoad>
                     <img
                       src={heroImage}
-                      className="d-block mx-lg-auto img-fluid col-12"
+                      className={`${styles.person_img} d-block mx-lg-auto img-fluid col-12`}
                       alt=""
                     />
                   </LazyLoad>
