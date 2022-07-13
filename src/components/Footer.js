@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <div className={`${styles.root} d-flex justify-content-center justify-center py-3`}>
-        <p className='text-center'>&copy;{t("Copyright", { year: new Date().getFullYear() })}</p>
+        <span className='text-center'>&copy;{t("Copyright", { year: new Date().getFullYear() })}</span>
       </div>
     </footer>
   );
